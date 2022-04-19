@@ -1,0 +1,9 @@
+.country{
+   background-color: rgb(54, 146, 228);
+   border: 2px solid aquamarine;
+   margin: 10px;
+   padding: 5px;
+}
+.country img{
+   width: 200px;
+}
