@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import Country from '../Country/Country';
 const Countries = () => {
    const [countries, setCountries] = useState([]);
    useEffect( () => {
@@ -10,6 +10,9 @@ const Countries = () => {
    return (
       <div>
          <h1>Hellow from Countries: {countries.length}</h1>
+         {
+            countries.map(country => <Country name={country.name.common} capital={country.capital} population={country.population}></Country>)
+         }
          
       </div>
    );
